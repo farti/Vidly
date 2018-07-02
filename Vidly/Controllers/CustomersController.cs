@@ -5,11 +5,11 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
-    public class MoviesController : Controller
+    public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
 
-        public MoviesController()
+        public CustomersController()
         {
             _context = new ApplicationDbContext();
         }
@@ -21,19 +21,20 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.Include(m => m.Genre).ToList();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
-            return View(movies);
+            return View(customers);
         }
 
         public ActionResult Details(int id)
         {
-            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
-            if (movie == null)
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
+            if (customer == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+
+            return View(customer);
         }
     }
 }
