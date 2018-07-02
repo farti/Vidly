@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Vidly.Models
 {
@@ -12,16 +9,21 @@ namespace Vidly.Models
         [Required]
         [MaxLength(255)]
         public string Name { get; set; }
-        
+
         public Genre Genre { get; set; }
 
         [Display(Name = "Genre")]
         [Required]
         public byte GenreId { get; set; }
-        
+
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
+        [DataType(DataType.Date)]
+        [Display(Name = "Added Date")]
         public DateTime DateAdded { get; set; }
 
-        [Display(Name="Relase Date")]
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
+        [DataType(DataType.Date)]
+        [Display(Name = "Relase Date")]
         public DateTime RelaseDate { get; set; }
 
         [Display(Name = "Number in Stock")]
