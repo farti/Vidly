@@ -24,16 +24,17 @@
     
     /*TODO: resolve datepicker problem with invert month and day */
     
-    <div class="form-group">
+    <div class="form-group" >
         @Html.LabelFor((m => m.RelaseDate))
-        @Html.TextBoxFor(m => m.RelaseDate, "{0:dd-MMM-yyyy}", new {   @class = "form-control date-picker" })
+        @Html.TextBoxFor(m => m.RelaseDate, "{0:dd-MMM-yyyy}", new { autocomplete="off",  @class = "form-control date-picker"  })
+        
         @Html.ValidationMessageFor(m => m.RelaseDate)
         
     </div>
 
-    <div class="form-group">
+    <div class="form-group" >
         @Html.LabelFor((m => m.DateAdded))
-        @Html.TextBoxFor(m => m.DateAdded, "{0:dd-MMM-yyyy}", new { @class = "form-control date-picker" })
+        @Html.TextBoxFor(m => m.DateAdded, "{0:dd-MMM-yyyy}", new { autocomplete = "off", @class = "form-control date-picker" })
         @Html.ValidationMessageFor(m => m.DateAdded)
     </div>
 
