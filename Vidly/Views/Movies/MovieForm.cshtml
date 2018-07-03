@@ -4,10 +4,10 @@
     ViewBag.Title = Model.Title;
 
 }
-<head>
+
     <h2>@Model.Title</h2>
 
-</head>
+
 
 
 
@@ -24,16 +24,16 @@
     
     /*TODO: resolve datepicker problem with close */
     
-    <div class="form-group" data-provide="datepicker">
+    <div class="form-group">
         @Html.LabelFor((m => m.RelaseDate))
-        @Html.TextBoxFor(m => m.RelaseDate, "{0:dd MMM yyyy}", new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.RelaseDate, "{0:MM'/'dd'/'yyyy}", new { @class = "ui-date-picker" })
         @Html.ValidationMessageFor(m => m.RelaseDate)
         
     </div>
 
-    <div class="form-group" data-provide="datepicker">
+    <div class="form-group">
         @Html.LabelFor((m => m.DateAdded))
-        @Html.TextBoxFor(m => m.DateAdded, "{0:dd MMM yyyy}", new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.DateAdded, "{0:MM'/'dd'/'yyyy}",  new { @class = "ui-date-picker" })
         @Html.ValidationMessageFor(m => m.DateAdded)
     </div>
 
@@ -60,11 +60,11 @@
 {
     @Scripts.Render("~/bundles/jqueryval")
     <script>
-        $('.datepicker').datepicker({
-            format: "0:d MMM yyyy",
-            todayBtn: true,
-            orientation: "auto right"
-        });
+
+        $(document).ready(function() {
+
+            $(".ui-date-picker").datepicker({ dateFormat: 'mm/dd/yy' });
+    })
     </script>
     
 
