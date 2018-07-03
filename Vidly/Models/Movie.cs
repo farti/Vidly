@@ -17,13 +17,13 @@ namespace Vidly.Models
         [Required]
         public byte GenreId { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:MM'/'dd'/'yyyy}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
+     
+        [DataType(DataType.DateTime)]
         [Display(Name = "Added Date")]
         public DateTime DateAdded { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:MM'/'dd'/'yyyy}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
+       
+        [DataType(DataType.DateTime)]
         [Display(Name = "Relase Date")]
         public DateTime RelaseDate { get; set; }
 

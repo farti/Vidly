@@ -56,6 +56,7 @@ namespace Vidly.Controllers
 
                 movieInDb.Name = movie.Name;
                 movieInDb.RelaseDate = movie.RelaseDate;
+                movieInDb.DateAdded = movie.DateAdded;
                 movieInDb.Genre = movie.Genre;
                 movieInDb.NumberInStock = movie.NumberInStock;
             }
