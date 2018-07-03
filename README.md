@@ -14,4 +14,5 @@
 * Introduction to MVC 5
 * Entity Framework
 * Bootstrap 3
+* jQuery
 
