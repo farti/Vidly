@@ -21,9 +21,13 @@ namespace Vidly
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap-datepicker").Include(
+                "~/Scripts/bootstrap-datepicker.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-jurnal.css",
                       "~/Content/site.css"));
+
         }
     }
 }

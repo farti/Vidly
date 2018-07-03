@@ -17,7 +17,7 @@ namespace Vidly.Models
         [Required]
         public byte GenreId { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Date)]
         [Display(Name = "Added Date")]
         public DateTime DateAdded { get; set; }
@@ -28,7 +28,7 @@ namespace Vidly.Models
         public DateTime RelaseDate { get; set; }
 
         [Display(Name = "Number in Stock")]
-        [Range(1,20)]
+        [Range(1, 20)]
         [Required]
         public byte NumberInStock { get; set; }
 
