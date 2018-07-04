@@ -16,6 +16,7 @@
 * Bootstrap -version:3.3.7
 * bootbox -version:4.3.0
 * jQuery -version:3.3.1
+* jquery.datatables -version:1.10.11
 * automapper -version:4.1
 
 * Postman for test API https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
