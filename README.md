@@ -11,7 +11,7 @@
 * Video rental project.
 
 ## Technologies
-* Introduction to MVC 5
+* Introduction to MVC 5 and ASP.NET Web API
 * Entity Framework
 * Bootstrap 3
 * jQuery
