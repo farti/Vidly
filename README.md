@@ -17,3 +17,5 @@
 * jQuery -version:3.3.1
 * automapper -version:4.1
 
+* Postman for test API https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+
