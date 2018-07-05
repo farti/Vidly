@@ -3,6 +3,7 @@
 * [Source](#source-info)
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Configuration](#configuration)
 
 ## Source
 * Project from: https://www.udemy.com/the-complete-aspnet-mvc-5-course/learn/v4/overview
@@ -21,3 +22,7 @@
 
 * Postman for test API https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
 
+
+## Configuration
+* Social Media Login
+Go to Startup.Auth.cs and uncomment code ( select one or more from line 48). Past Key and Secret from selected providers.
