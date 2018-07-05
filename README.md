@@ -24,5 +24,5 @@
 
 
 ## Configuration
-* Social Media Login
+* Social Media Login  
 Go to Startup.Auth.cs and uncomment code ( select one or more from line 48). Past Key and Secret from selected providers.
