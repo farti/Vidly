@@ -21,6 +21,7 @@
 * automapper -version:4.1
 * glimpse.mvc5 -version:1.5.3  Glimpse.EF6 -version:1.6.5
 * Twitter.Typeahead -version:0.11.1
+* toastr -version:2.1.1
 * Postman for test API https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
 
 
