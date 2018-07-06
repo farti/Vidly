@@ -19,7 +19,7 @@
 * jQuery -version:3.3.1
 * jquery.datatables -version:1.10.11
 * automapper -version:4.1
-* glimpse.mvc5 -version:1.5.3
+* glimpse.mvc5 -version:1.5.3  Glimpse.EF6 -version:1.6.5
 
 * Postman for test API https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
 
