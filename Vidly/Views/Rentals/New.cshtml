@@ -20,12 +20,19 @@
     
     <button class="btn btn-primary">Submit</button>
 </form>
+<ul id="movies" class="list-group">
+
+</ul>
+
+
 @section scripts
 {
     <script>
         $(document).ready(function () {
 
-            var vm = {};
+            var vm = {
+                moviesIds: []
+        };
 
             var customers = new Bloodhound({
                 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
@@ -64,8 +71,12 @@
                 display: 'name',
                 source: customers
             }).on("typeahead:select", function(e, movie) {
-                vm.movie.id = movie.id;
-                });
+                $("#movies").append("<li>" + movie.name + "</li>");
+
+                $("#movie").typeahead("val", "");
+
+                vm.moviesIds.push(movie.id);
+            });
 
         });
     </script>
